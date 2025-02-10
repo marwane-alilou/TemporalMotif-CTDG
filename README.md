@@ -1,7 +1,6 @@
 # TemporalMotif-CTDG
 ## Abstract  
-This project presents a method for modeling temporal networks using Continuous-Time Dynamic Graphs (CTDGs) with temporal motifs. Our approach captures the temporal evolution of interactions while preserving the underlying structural patterns. The method enhances predictive capabilities and enables better understanding of real-world dynamic networks.
-
+TemporalMotif-CTDG is a framework for analyzing temporal graph structures using motif-based methods. The project focuses on capturing dynamic graph patterns and leveraging them for downstream tasks such as node classification and link prediction. By integrating motif-based features into a continuous-time dynamic graph (CTDG) framework, we enhance the ability to model evolving relationships within graph-structured data.
 ## Method Overview  
 Below is **Figure 3**, which illustrates the overall workflow of our method:  
 
