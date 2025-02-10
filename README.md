@@ -9,7 +9,7 @@ Below is **Figure 3**, which illustrates the overall workflow of our method:
 ## Task Workflow  
 Below is **Figure 5**, which depicts the sequence of tasks performed in this project:  
 
-![Task Workflow](images/downstream2.pdf)  
+![Task Workflow](images/downstream3.png)  
 
 ## Repository Structure  
 The repository is organized as follows: 
