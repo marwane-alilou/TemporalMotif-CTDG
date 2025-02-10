@@ -4,7 +4,7 @@ TemporalMotif-CTDG is a framework for analyzing temporal graph structures using 
 ## Method Overview  
 Below is **Figure 3**, which illustrates the overall workflow of our method:  
 
-![Method Overview](images/Temporal Graph.pdf)  
+![Method Overview](images/Temporal_Graph.pdf)  
 
 ## Task Workflow  
 Below is **Figure 5**, which depicts the sequence of tasks performed in this project:  
