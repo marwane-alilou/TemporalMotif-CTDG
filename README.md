@@ -61,3 +61,15 @@ The `Datasets` directory contains real-world datasets used in experiments, inclu
 - **MOOC:** Online learning interactions.
 - **Reddit:** Discussions from Reddit.
 - **Wikipedia:** Edit interactions on Wikipedia.
+
+## Citation
+
+If you use this repository in your research, please cite:
+
+```
+@article{your_paper_citation,
+  title={Motif Extraction and Prediction in Temporal Networks1},
+  author={Alilou Marouane,Bikram Pratim Bhuyan},
+  journal={Your Journal},
+  year={2025}
+}
