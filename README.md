@@ -14,19 +14,50 @@ We applied our framework to various temporal graph learning tasks, including nod
 This figure highlights how motif-based features contribute to different graph learning applications.
 
 ## Repository Structure
-###CodeBase/ – Contains Jupyter notebooks for experiments:
 
-ablation-study.ipynb – Ablation study experiments
-link_prediction.ipynb – Link prediction experiments
-link_prediction_Node2Vec_50_epochs_4_models.ipynb – Link prediction using Node2Vec
-node-classification.ipynb – Node classification experiments
-node_classification_Node2Vec_50_epochs_4_models.ipynb – Node classification with Node2Vec
-parametric-sensitivity.ipynb – Sensitivity analysis on model parameters
+```
+TemporalMotif-CTDG/
+│── CodeBase/                # Jupyter notebooks for model training and evaluation
+│   ├── ablation-study.ipynb
+│   ├── link_prediction.ipynb
+│   ├── link_prediction_Node2Vec_50_epochs_4_models.ipynb
+│   ├── node-classification.ipynb
+│   ├── node_classification_Node2Vec_50_epochs_4_models.ipynb
+│   ├── parametric-sensitivity.ipynb
+│
+│── Datasets/                # Dataset files used in experiments
+│   ├── CollegeMsg.txt
+│   ├── ml_enron.txt
+│   ├── ml_mooc.txt
+│   ├── ml_reddit.txt
+│   ├── ml_wikipedia.txt
+│
+│── README.md                # Project documentation
+│── .gitattributes            # Git attributes configuration
+```
 
-###Datasets/ – Includes various temporal graph datasets:
+## Installation
 
-CollegeMsg.txt – College messaging dataset
-ml_enron.txt – Enron email dataset
-ml_mooc.txt – MOOC interaction dataset
-ml_reddit.txt – Reddit discussions dataset
-ml_wikipedia.txt – Wikipedia edits dataset
+To run the notebooks in this repository, install the required dependencies:
+
+
+## Usage
+
+The notebooks in the `CodeBase` directory provide step-by-step implementations of various experiments:
+
+- **Link Prediction:** Evaluates the ability to predict future links in a dynamic graph.
+- **Node Classification:** Classifies nodes based on learned embeddings.
+- **Ablation Study:** Analyzes the impact of different parameters on model performance.
+- **Parametric Sensitivity Analysis:** Studies how different hyperparameters influence results.
+
+Each notebook is self-contained and provides instructions on running the corresponding experiments.
+
+## Dataset
+
+The `Datasets` directory contains real-world datasets used in experiments, including:
+
+- **CollegeMsg:** Messaging activity among college students.
+- **Enron:** Email communication network.
+- **MOOC:** Online learning interactions.
+- **Reddit:** Discussions from Reddit.
+- **Wikipedia:** Edit interactions on Wikipedia.
