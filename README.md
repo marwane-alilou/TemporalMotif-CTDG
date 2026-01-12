@@ -12,3 +12,86 @@ We applied our framework to various temporal graph learning tasks, including nod
 
 ![Task Workflow](images/downstream2.pdf)  
 This figure highlights how motif-based features contribute to different graph learning applications.
+## Tasks Performed  
+
+The framework supports the following temporal graph learning tasks:
+
+- **Node Classification**
+- **Link Prediction**
+- **Ablation Studies**
+- **Parametric Sensitivity Analysis**
+
+These tasks are designed to evaluate the contribution of temporal bias, motif sets, incidence matrices, and temporal/structural encoders within the CTDG pipeline.
+
+---
+
+## Repository Structure  
+
+## Repository Structure
+
+```
+TemporalMotif-CTDG/
+│── configs/                # Jupyter notebooks for model training and evaluation
+│   ├── protocol.yaml
+│── data/                # Dataset files used in experiments
+│   ├── ml_CollegeMsg.csv
+│   ├── ml_enron.csv
+│   ├── ml_mooc.csv
+│   ├── ml_reddit.csv
+│   ├── ml_wikipedia.csv
+│
+├── images
+├── runners
+    ├── ablations_ssm_encoder.py
+    ├── run_nodecls.py
+    ├── run_nodescls_primary.py
+    ├── run_ours.py
+├── scripts
+    ├──ablation_incidence_only_tuned.py
+    ├──....
+├── src
+    ├── dataio
+    ├── sampling
+    ├── temporal
+├── tools
+│── README.md                # Project documentation
+│── .gitattributes            # Git attributes configuration
+```
+
+---
+
+## Installation
+
+To run the notebooks in this repository, install the required dependencies:
+
+## Usage
+
+The scripts in the runners/ and scripts/ directories provide step-by-step execution of experiments:
+
+### Main Method :
+
+python runners/run_ours.py --config configs/protocol.yaml
+
+### Node Classification:
+
+python runners/run_nodecls.py
+
+### Ablation Studies:
+
+python scripts/run_ablations.py
+
+
+### Parametric Sensitivity Analysis:
+
+python scripts/run_param_sensitivity.py
+
+
+## Dataset
+
+The `Datasets` directory contains real-world datasets used in experiments, including:
+
+- **CollegeMsg:** Messaging activity among college students.
+- **Enron:** Email communication network.
+- **MOOC:** Online learning interactions.
+- **Reddit:** Discussions from Reddit.
+- **Wikipedia:** Edit interactions on Wikipedia.
